@@ -10,10 +10,10 @@
 int main(void)
 {
 	int n;
+	int last_num;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int last_num;
 	last_num = n % 10;
 
 	if (n > 5)
