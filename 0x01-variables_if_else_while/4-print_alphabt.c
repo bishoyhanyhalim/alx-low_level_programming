@@ -3,7 +3,7 @@
 /**
  * main - print lowwer words
  *
- * Retern: 0 Alwayes
+ * Return: 0 Alwayes
  */
 int main(void)
 {
