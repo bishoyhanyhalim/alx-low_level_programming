@@ -1,4 +1,4 @@
-#include <strio.h>
+#include <stdio.h>
 
 /**
  * main - Entry void
