@@ -2,9 +2,8 @@
 
 /**
  * main - print words
- *
- * print_alphabet - Entry point
- * Return:0
+ * print_alphabet - Entry point function to print a -z
+ * Return: 0 always
  */
 void print_alphabet(void)
 {
