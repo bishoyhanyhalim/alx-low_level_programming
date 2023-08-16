@@ -3,12 +3,6 @@
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
  *
- * @h: The hour of the time.
- * @m: The minute of the time.
- * @n: This is not a valid parameter for this function.
- *
- * @n: the int to extract the last digit from
- *
  * Return: value of the last digit
  */
 void jack_bauer(void)
