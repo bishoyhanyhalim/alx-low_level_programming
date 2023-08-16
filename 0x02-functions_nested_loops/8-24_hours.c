@@ -3,7 +3,10 @@
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer
  *
+ * n - funchshan
+ *
  * @n: the int to extract the last digit from
+ *
  * Return: value of the last digit
  */
 void jack_bauer(void)
