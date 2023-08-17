@@ -22,7 +22,7 @@ int main(void)
 		num1 = num2;
 		num2 = sum;
 	}
-	pritnf("%.0f\n", total);
+	printf("%.0f\n", total);
 
 	return (0);
 }
