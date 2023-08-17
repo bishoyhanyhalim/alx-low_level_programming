@@ -7,20 +7,25 @@
  */
 int main(void)
 {
-	unsigned long total = 0;
-	unsigned long num1 = 0, num2 = 1, sum;
+	int num3;
+	unsigned long int num, num2, total, sum;
 
-	while (sum <= 400000)
+	num = 1;
+	num2 = 2;
+	sum = 0;
+
+	for (num3 = 1; num3 <= 33; ++num3)
 	{
-		sum = num1 + num2;
-
-		if ((sum % 2) == 0)
-			total += sum;
-
-		num1 = num2;
-		num2 = sum;
+		if (num < 4000000 && (num % 2) == 0)
+		{
+			sum = sum + num;
+		}
+		total = num + num2;
+		num = num2;
+		num2 = total;
 	}
-	printf("%lu\n", total);
+
+	printf("%lu\n", sum);
 
 	return (0);
 }
