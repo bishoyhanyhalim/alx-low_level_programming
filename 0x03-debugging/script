@@ -2,8 +2,8 @@
 
 echo "Input new file"
 
-read $file
+read file
 
-echo "#include" > $file
+echo "#include" > ${file}
 
-chmod +x $file
+chmod +x ${file}
