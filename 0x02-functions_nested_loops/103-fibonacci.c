@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long long total = 0;
+	unsigned long total = 0;
 	unsigned long num1 = 0, num2 = 1, sum;
 
 	while (1)
@@ -22,7 +22,7 @@ int main(void)
 		num1 = num2;
 		num2 = sum;
 	}
-	printf("%.0llu\n", total);
+	printf("%.0lu\n", total);
 
 	return (0);
 }
