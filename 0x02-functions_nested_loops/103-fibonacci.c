@@ -17,7 +17,7 @@ int main(void)
 		if (sum > 400000)
 			break;
 		if ((sum % 2) == 0)
-			total += sum
+			total += sum;
 
 		num1 = num2;
 		num2 = sum;
