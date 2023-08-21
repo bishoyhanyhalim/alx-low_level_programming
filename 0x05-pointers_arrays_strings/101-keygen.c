@@ -20,9 +20,9 @@ int main(void)
 		pass[i] = rand() % 78;
 		sum += (pass[i] + '0');
 		putchar(pass[i] + '0');
-		if ((2772 - sum) - '0' < 78)
+		if ((5563 - sum) - '0' < 78)
 		{
-			s = 2772 - sum - '4';
+			s = 5563 - sum - '0';
 			sum += s;
 			putchar(s + '0');
 			break;
