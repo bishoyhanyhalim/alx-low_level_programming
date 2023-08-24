@@ -10,9 +10,9 @@ char *string_toupper(char *num)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; num[i] != '\0'; i++)
 	{
-		if (num[i] >= 'a' && num[i] <= 'z')
+		if (num[i] >= 97 && num[i] <= 122)
 			num[i] = num[i] - 32;
 	}
 
