@@ -6,25 +6,25 @@
  *
  * Return: the resulting string
  */
-char *rot13(char *do)
+char *rot13(char *go)
 {
 	int num;
 
 	char rot13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char ROT13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	char *ptr = do;
+	char *ptr = go;
 
-	while (*do)
+	while (*go)
 	{
 		for (num = 0; num <= 52; num++)
 		{
-			if (*do == rot13[num])
+			if (*go == rot13[num])
 			{
-				*do = ROT13[num];
+				*go = ROT13[num];
 				break;
 			}
 		}
-		do++;
+		go++;
 	}
 	return (ptr);
 }
