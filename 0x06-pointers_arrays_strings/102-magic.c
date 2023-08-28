@@ -1,5 +1,7 @@
 #include "main.h"
-
+/*
+ * main - funcshan to print 98
+ * Return: 0 alwayes
 int main(void)
 {
 	int n;
