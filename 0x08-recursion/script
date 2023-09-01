@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Input new file"
+
+read file
+
+echo "#include" > ${file}
+
+chmod +x ${file}
