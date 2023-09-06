@@ -2,26 +2,33 @@
 #include "main.h"
 
 /**
- * *_strdup - copies of the string
+ * _strdup - duplicates the string
  * @str: string to duplicate
  *
- * Return: pointer to string
+ * Return: pointer of duplicated
  */
 
 char *_strdup(char *str)
 {
-	char *value = malloc(strlen(str) + 1);
+	char *hello;
+	unsigned int num, go;
 
-	if (value == NULL)
-	{
-		return (NULL);
-	}
+	num = 0;
+	go = 0;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	strcpy(value, str);
-	return (value);
+	while (str[go])
+		go++;
+
+	hello = malloc(sizeof(char) * (go + 1));
+
+	if (hello == NULL)
+		return (NULL);
+
+	while ((hello[num] = str[num]) != '\0')
+		num++;
+
+	return (hello);
 }
