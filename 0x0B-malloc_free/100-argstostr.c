@@ -11,15 +11,17 @@ char *argstostr(int ac, char **av)
 {
 	int value = 0;
 	int hello = 0;
+	int num;
+	int cool;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
-	for (int num = 0; num < ac; num++)
+	for (num = 0; num < ac; num++)
 	{
-		for (int cool = 0; av[num][cool]; cool++)
+		for (cool = 0; av[num][cool]; cool++)
 		{
 			hello++;
 		}
@@ -33,9 +35,9 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (int num = 0; num < ac; num++)
+	for (num = 0; num < ac; num++)
 	{
-		for (int cool = 0; av[num][cool]; cool++)
+		for (cool = 0; av[num][cool]; cool++)
 		{
 			arg[value++] = av[num][cool];
 		}
