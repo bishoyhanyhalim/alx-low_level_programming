@@ -11,7 +11,7 @@ void free_grid(int **grid, int height)
 {
 	int numbers;
 
-	if (grid == NULL || height == NULL)
+	if (grid == NULL || height == 0)
 	{
 		return;
 	}
