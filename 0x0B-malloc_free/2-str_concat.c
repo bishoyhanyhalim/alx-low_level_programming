@@ -25,6 +25,15 @@ char *str_concat(char *s1, char *s2)
 	ko = 0;
 	sum = 0;
 
+	if (s1)
+	{
+		while (ko < value1)
+		{
+			num[ko] = s1[ko];
+			ko++;
+		}
+	}
+
 	if (s2)
 	{
 		while (ko < (value1 + value2))
@@ -32,15 +41,6 @@ char *str_concat(char *s1, char *s2)
 			num[ko] = s2[sum];
 			ko++;
 			sum++;
-		}
-	}
-
-		if (s1)
-	{
-		while (ko < value1)
-		{
-			num[ko] = s1[ko];
-			ko++;
 		}
 	}
 	num[ko] = '\0';
