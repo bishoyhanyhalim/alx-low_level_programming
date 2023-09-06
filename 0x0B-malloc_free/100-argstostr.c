@@ -11,6 +11,7 @@ char *argstostr(int ac, char **av)
 {
 	int value = 0;
 	int hello = 0;
+	char *arg;
 	int num;
 	int cool;
 
@@ -28,7 +29,7 @@ char *argstostr(int ac, char **av)
 		hello++;
 	}
 
-	char *arg = malloc(hello + ac);
+	*arg = malloc(hello + ac);
 
 	if (arg == NULL)
 	{
