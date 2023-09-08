@@ -2,46 +2,53 @@
 #include <stdlib.h>
 
 /**
- * *string_nconcat - n bytes to string
- * @s1: string for append
- * @s2: string for char
- * @n: numbers of bytes for char
- * Return: pointer for string
+ * *string_nconcat - n bytes from string
+ * @s1: string for poiner
+ * @s2: string to concatenate from
+ * @n: number from bytes
+ *
+ * Return: pointer go to string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *go;
-	unsigned int num1;
-	unsigned int num2;
-	unsigned int num3 = 0;
+	char *cool;
+	unsigned int number1 = 0;
+	unsigned int number2 = 0;
+	unsigned int look = 0;
+	unsigned int moon = 0;
 
+	while (s1 && s1[look])
+		look++;
+	while (s2 && s2[moon])
+		moon++;
 
-	if (!s1)
-		s1 = "";
-	if (!s2)
-		s2 = "";
+	if (n < moon)
+	{
+		cool = malloc(sizeof(char) * (look + n + 1));
+	}
+	else
+	{
+		cool = malloc(sizeof(char) * (look + moon + 1));
+	}
 
-	while (s1[num3])
-		num3++;
-
-	go = malloc(sizeof(char) * (num3 + n + 1));
-
-	if (!go)
+	if (!cool)
 	{
 		return (NULL);
 	}
 
-	for (num1 = 0; *s1; num1++, s1++)
+	while (number1 < look)
 	{
-		go[num1] = *s1;
+		cool[number1] = s1[number1];
+		number1++;
 	}
 
-	for (num1 = num3, num2 = 0; num2 < n && s2[num2]; num1++, num2++)
-	{
-		go[num1] = s2[num2];
-	}
+	while (n < moon && number1 < (look + n))
+		cool[number1++] = s2[number2++];
 
-	go[num3 + n] = '\0';
+	while (n >= moon && number1 < (look + moon))
+		cool[number1++] = s2[number2++];
 
-	return (go);
+	cool[number1] = '\0';
+
+	return (cool);
 }
