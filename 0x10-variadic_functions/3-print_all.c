@@ -26,35 +26,28 @@ void print_all(const char * const format, ...)
 				case 'f':
 					printf("%s%f", zoom, va_arg(list, double));
 					break;
-
 				case 'i':
 					printf("%s%d", zoom, va_arg(list, int));
 					break;
-
 				case 'c':
 					printf("%s%c", zoom, va_arg(list, int));
 					break;
-
 				case 's':
 					luck = va_arg(list, char *);
 					if (!luck)
 					{
 						luck = "(nil)";
 					}
-
 					printf("%s%s", zoom, luck);
 					break;
 				default:
 					numbers++;
 					continue;
 			}
-
 			zoom = ", ";
-
 			numbers++;
 		}
 	}
 	va_end(list);
-
 	printf("\n");
 }
