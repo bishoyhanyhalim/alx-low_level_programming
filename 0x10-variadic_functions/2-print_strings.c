@@ -23,11 +23,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			look = "(nil)";
 		}
-		else if (separator && going == 0)
+		else if (!separator)
 		{
 			printf("%s", look);
 		}
-		if (!separator)
+		else if (separator && going == 0)
 		{
 			printf("%s", look);
 		}
