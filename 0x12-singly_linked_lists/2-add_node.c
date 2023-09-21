@@ -4,7 +4,7 @@
 
 /**
  * add_node - this fun for node
- * @head: pointers for the node list
+ * @head: pointers for the node list for
  * @str: add a str for node list
  *
  * Return: return the value head
