@@ -19,8 +19,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	
-	(*soon).n = n;
+
+	soon->n = n;
 	soon->next = NULL;
 
 	if (*head == NULL)
