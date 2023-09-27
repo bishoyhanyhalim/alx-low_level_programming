@@ -1,4 +1,4 @@
-i#include "lists.h"
+#include "lists.h"
 
 /**
  * delete_nodeint_at_index - put the code list
@@ -10,9 +10,9 @@ i#include "lists.h"
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int goby = 0;
-	listint_t *moons = NULL;
-	listint_t *full = *head;
+	unsigned int book = 0;
+	listint_t *door = *head;
+	listint_t *hot = NULL;
 
 	if (*head == NULL)
 	{
@@ -22,24 +22,22 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		*head = (*head)->next;
-		free(full);
+		free(door);
 		return (1);
 	}
 
-	while (goby < index - 1)
+	while (book < index - 1)
 	{
-		if (!full || !(full->next))
-		{
+		if (!door || !(door->next))
 			return (-1);
-		}
-		full = full->next;
-		goby++;
+		door = door->next;
+		book++;
 	}
 
-	moons = full->next;
-	full->next = moons->next;
+	hot = door->next;
+	door->next = hot->next;
 
-	free(moons);
+	free(hot);
 
 	return (1);
 }
