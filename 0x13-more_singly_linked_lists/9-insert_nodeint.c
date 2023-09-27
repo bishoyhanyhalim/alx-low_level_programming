@@ -4,9 +4,9 @@
  * insert_nodeint_at_index - put the code list
  * @head: look for the wall number
  * @idx: be4f kam el index
- * @n: add the list in nice ind
+ * @n: add the list in nice index
  *
- * Return: pointer to the nice node, or NULL
+ * Return: return the value of code
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
