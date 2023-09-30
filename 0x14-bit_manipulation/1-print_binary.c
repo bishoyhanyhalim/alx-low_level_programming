@@ -16,7 +16,8 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (go = n, more = 0; (go >>= 1) > 0; more++);
+	for (go = n, more = 0; (go >>= 1) > 0; more++)
+		;
 
 	for (; more >= 0; more--)
 	{
