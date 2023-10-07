@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <fcntl.h>
 #include "main.h"
 
@@ -27,8 +26,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	cool = read(home, moon, letters);
 	home = open(filename, O_RDONLY);
+	cool = read(home, moon, letters);
 	going = write(STDOUT_FILENO, moon, cool);
 
 	if (home == -1 || cool == -1 || going == -1 || going != cool)
