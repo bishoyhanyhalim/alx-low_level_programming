@@ -16,7 +16,7 @@ void end_of_files(int going)
 
 	if (book == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close going %d\n", going);
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", going);
 		exit(100);
 	}
 }
