@@ -2,6 +2,8 @@
 #define HELLO_FILES
 
 #include <sys/stat.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <fcntl.h>
 #include <sys/types.h>
 #include <unistd.h>
