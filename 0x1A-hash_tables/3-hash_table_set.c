@@ -25,21 +25,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	moons = key_index((const unsigned char *)key, ht->size);
-
 	for (i = moons; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
 			free(ht->array[i]->value);
-
 			ht->array[i]->value = books;
-
 			return (1);
 		}
 	}
 
 	nour = malloc(sizeof(hash_node_t));
-
 	if (nour == NULL)
 	{
 		free(books);
@@ -49,13 +45,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (nour->key == NULL)
 	{
 		free(nour);
-
 		return (0);
 	}
 	nour->value = books;
-
 	nour->next = ht->array[moons];
-
 	ht->array[moons] = nour;
 
 	return (1);
